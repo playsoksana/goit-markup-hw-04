@@ -20,6 +20,7 @@ html {
   --dark-background: #2f303a;
   --border-color-card: #eeeeee;
   --border-header: #ececec;
+  --border-icon: #afb1b8;
 }
 
 /* Сброс стилей и основные стили*/
@@ -276,7 +277,7 @@ body {
 }
 
 .display-work li {
-  width: calc((100% - 60px)/3);
+  width: calc((100% - 60px) / 3);
 }
 
 .team {
@@ -306,7 +307,7 @@ body {
 .display-team > .photo-team {
   background-color: var(--backgroung-white);
   border: 1px solid transparent;
-  width: calc((100% - 90px)/4);
+  width: calc((100% - 90px) / 4);
 }
 
 .team img {
@@ -416,4 +417,58 @@ body {
   color: var(--primari-title);
   margin-top: 0;
   margin-bottom: 4px;
+}
+
+/* icon */
+.adv-list .icon {
+  width: 70px;
+  height: 70px;
+}
+
+.adv-list .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.clients-list {
+  display: flex;
+}
+
+.item-client {
+  width: calc((100% - 150px) / 6);
+}
+.item-client:not(:nth-last-child(1)) {
+  margin-right: 30px;
+}
+
+.item-client a {
+  display: block;
+  width: 100%;
+  height: 90px;
+  box-sizing: border-box;
+  color: var(--border-icon);
+  border: 1px solid var(--border-icon);
+  border-radius: 4px;
+}
+
+.item-client a:hover,
+.item-client a:focus {
+  color: var(--acccent-color);
+  border: 1px solid var(--acccent-color);
+  border-radius: 4px;
+}
+
+.item-client .icon {
+  fill: currentColor;
+}
+
+.company4 use {
+  width: 80px;
+  height: 42px;
 }
