@@ -627,3 +627,19 @@ body {
   margin-top: 0;
   margin-bottom: 4px;
 }
+
+/* main-contacts */
+.test div {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+}
+
+.test a {
+  display: flex;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
