@@ -20,7 +20,7 @@ html {
   --dark-background: #2f303a;
   --border-color-card: #eeeeee;
   --border-header: #ececec;
-  --border-icon: #afb1b8;
+  --icon-color-second: #afb1b8;
   --icon-color: rgba(255, 255, 255, 0.1);
   --background-hero: #c4c4c4;
 }
@@ -444,7 +444,7 @@ body {
   height: 20px;
   border: 0;
 
-  color: var(--border-icon);
+  color: var(--icon-color-second);
 }
 
 .box-network .list {
@@ -469,7 +469,7 @@ body {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  color: var(--border-icon);
+  color: var(--icon-color-second);
 }
 
 .list-network a:hover,
@@ -478,7 +478,7 @@ body {
   color: var(--second-title);
 }
 
-.photo-team .icon {
+.list-network a {
   fill: currentColor;
   color: currentColor;
 }
@@ -507,8 +507,8 @@ body {
   justify-content: center;
   width: 100%;
   height: 100%;
-  color: var(--border-icon);
-  border: 1px solid var(--border-icon);
+  color: var(--icon-color-second);
+  border: 1px solid var(--icon-color-second);
   border-radius: 4px;
 }
 
@@ -518,7 +518,7 @@ body {
   border: 1px solid var(--acccent-color);
 }
 
-.item-client .icon {
+.item-client a {
   fill: currentColor;
 }
 
@@ -588,7 +588,7 @@ body {
 }
 
 .item-portfolio {
-  border: 1px solid var(--border-color-card);
+  border: 0;
   max-width: calc((100% - 60px) / 3);
 }
 
@@ -600,8 +600,16 @@ body {
   margin-right: 30px;
 }
 
-.item-portfolio:focus,
-.item-portfolio:hover {
+.item-portfolio a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--border-color-card);
+}
+
+.item-portfolio a:focus,
+.item-portfolio a:hover {
   border: 1px solid var(--border-color-card);
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
@@ -626,20 +634,4 @@ body {
   color: var(--primari-title);
   margin-top: 0;
   margin-bottom: 4px;
-}
-
-/* main-contacts */
-.test div {
-  height: 200px;
-  width: 200px;
-  border: 1px solid black;
-}
-
-.test a {
-  display: flex;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
 }
