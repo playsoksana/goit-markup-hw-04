@@ -470,16 +470,16 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--icon-color-second);
+  fill: currentColor;
 }
 
 .list-network a:hover,
 .list-network a:focus {
   background-color: var(--acccent-color);
-  color: var(--second-title);
+  fill: var(--second-background);
 }
 
-.list-network a {
-  fill: currentColor;
+.list-network .icon {
   color: currentColor;
 }
 
