@@ -47,6 +47,8 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--text-color);
+
+  margin: 0;
 }
 
 .center {
@@ -272,7 +274,7 @@ body {
   background-position: center;
   background-size: cover;
 
-  padding: 200px 452px;
+  padding: 200px;
 }
 
 .title {
@@ -287,6 +289,11 @@ body {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 30px;
+}
+
+.title-hero {
+  width: 696px;
+  margin: 0 auto;
 }
 
 .hero-link {
@@ -402,6 +409,8 @@ body {
 .team {
   font-size: 16px;
   line-height: 2;
+
+  background-color: var(--second-background);
 }
 
 .photo-team h3 {
@@ -510,16 +519,13 @@ body {
   color: var(--icon-color-second);
   border: 1px solid var(--icon-color-second);
   border-radius: 4px;
+  fill: currentColor;
 }
 
 .item-client a:hover,
 .item-client a:focus {
   color: var(--acccent-color);
   border: 1px solid var(--acccent-color);
-}
-
-.item-client a {
-  fill: currentColor;
 }
 
 /* Страница пoртфолио */
