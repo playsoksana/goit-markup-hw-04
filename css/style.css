@@ -157,6 +157,7 @@ body {
   height: 100%;
   padding-top: 32px;
   padding-bottom: 32px;
+  fill: currentColor;
 }
 
 .adress-header:hover,
@@ -165,7 +166,6 @@ body {
 }
 
 .header-contacts .icon {
-  fill: currentColor;
   margin-right: 10px;
 }
 
@@ -464,7 +464,6 @@ body {
   margin-right: 10px;
 }
 
-/*  что я доделала */
 .list-network li {
   display: flex;
   width: 44px;
@@ -486,10 +485,6 @@ body {
 .list-network a:focus {
   background-color: var(--acccent-color);
   fill: var(--second-background);
-}
-
-.list-network .icon {
-  color: currentColor;
 }
 
 /* clients */
