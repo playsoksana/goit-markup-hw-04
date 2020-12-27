@@ -383,7 +383,6 @@ body {
   align-items: center;
   justify-content: center;
   width: auto;
-  height: 120px;
 
   background: var(--second-background);
   border-radius: 4px;
