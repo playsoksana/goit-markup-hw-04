@@ -502,16 +502,10 @@ body {
 }
 
 .item-client {
-  width: calc((100% - 150px) / 6);
-}
-
-.item-client {
-  margin-left: 30px;
-}
-
-.item-client {
   display: flex;
+  width: calc((100% - 150px) / 6);
   height: 100%;
+  margin-left: 30px;
 }
 
 .item-client .link-company {
